@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        h1 {
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Nacionalidade</h1>
+    <input type="text" placeholder="Seu País?" id="meuPais">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var pais = document.getElementById('meuPais')
+            var res = document.getElementById('res')
+            // res.innerHTML = pais.value
+
+            if(pais.value === 'brasil'){
+                res.innerHTML = 'Você é Brasileiro'
+                pais.value = ''
+            } else {
+                res.innerHTML = 'Você é estrangeiro'
+                pais.value = ''
+            }
+        }
+    </script>
+</body>
+</html>

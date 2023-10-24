@@ -1,0 +1,61 @@
+Condições
+
+    Tipos de condição
+
+        Simples:
+            if (){ 
+                true
+            }
+
+            e
+            
+        Composta:
+
+            if (){
+                true/verdadeiro
+            } else {
+                false/falso
+            }
+        
+        Aninhadas
+
+            if (cond 1){
+
+            } else {
+                if (cond 2){
+                    bloco 2
+                }else{
+                    bloco 3
+                }
+            }
+
+        Aninhadas simples 
+
+            if (){
+
+            }else if {
+
+            }else {
+                
+            }
+
+        Múltipla
+
+            switch (expressão) {
+                case valor 1:
+
+                    break
+                case valor 2:
+
+                    break
+                case valor 3:
+
+                    break
+                default:
+
+                    break
+            }
+
+            Obs: adicionar break em todos o case obrigatório
+
+            Funcionamento do switch, ele vai testa a expressão e depois de executar uma das case e vai bater no break e encerrar a função.

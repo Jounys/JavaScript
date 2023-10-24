@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvore DOOM</title>
+    <style>
+        body {
+            background: rgb(45, 45, 233);
+            color: white;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arvore DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        var corpo = document.body
+        var d = document.getElementById('msg')
+
+        corpo.style.background = 'black'
+
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+        d.innerText = 'Qual a boa?'
+        d.style.background = 'lightgray'
+        // window.document.getElementById('msg').innerText = 'Otario'
+        // window.document.write( window.navigator.appName)
+    </script>
+</body>
+</html> 

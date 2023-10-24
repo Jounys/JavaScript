@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <H1>Mudando o background</H1>
+    <input type="button" value="Dark" onclick="alterar()" id="modoButton">
+    <script>
+        var DarkMode = false
+
+        function alterar(){
+            var corpo = document.querySelector('body')
+            var modoButton = document.getElementById('modoButton')
+
+            if (DarkMode){
+                corpo.style.background = 'white'
+                corpo.style.color = 'black'
+                modoButton.value = 'Dark'
+                DarkMode = false;
+            } else {
+                corpo.style.background = 'black'
+                corpo.style.color = 'white'
+                modoButton.value = 'Light'
+                DarkMode = true;
+            }
+        }
+    </script>
+</body>
+</html>

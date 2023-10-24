@@ -1,0 +1,31 @@
+Converção de String para Number:
+
+    Number.parseInt(n) *Número Inteirio
+
+    Number.parseFloat(n) *Número Real, com vírgula
+
+    Number(n) *Simplificado
+
+Converção de Número para String:
+
+    String(n)
+    n.toString()  
+
+var s = 'JavaScript'
+
+s.length   // (atributo) Quantos caracteres a string tem
+s.toUpperCase()  //  Deixa as letras 'MAIÚSCULAS'
+s.toLowerCase()  //  Letras 'minúsculas'
+
+Formatar casas decimais:
+
+    .toFixed()
+
+    Ex: n1 = 1515.5
+        n1.toFixed(2)
+    R:  1515.50
+
+        Para trocar de ponto(.) para vírgula:
+
+            n1.toFixed(2).replace('.', ',')
+            1515,50

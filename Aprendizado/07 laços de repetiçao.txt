@@ -1,0 +1,45 @@
+Laços de repetição
+
+    while (condição){
+
+     }
+
+      Ex:
+        var c = 1
+        while (c <= 5){
+        console.log(`Passo ${c}`)
+        c++
+        }
+        Estrutura de repetição com teste lógico no início
+
+    do {
+
+     } while (condição){
+
+     }
+
+      Ex
+
+        var c = 1
+        do {
+        console.log(`Passo ${c}`)
+        c++
+        } while (c <= 9)
+     
+        Estrutura de repetição com teste lógico no final
+        while quer dizer 'enquanto' vai repetir ate não ser mais verdade e finalizar 
+
+
+
+    for (inicio ; teste ; incr){
+
+      }
+
+      Ex:
+
+        for (var c = 1; c <= 5 ; c++){
+            console.log(c)
+        }
+
+        Estrutura de repetiçao com variavel de controle
+        Obs: pode colocar qualquer Estrutura dentro do for

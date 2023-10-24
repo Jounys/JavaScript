@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Texto</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulação de Texto</h1>
+    <input type="text" id="txt">
+    <input type="button" value="Alterar" onclick="alterar()">
+
+    <ul>
+        <li>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quasi veritatis perferendis odio nisi laudantium quod officia eaque magni quis, amet adipisci officiis cum maxime fugit iusto. Voluptate, illum a.
+            </p>
+        </li>
+    </ul>
+
+    <script>
+        function alterar(){
+            var texto = document.getElementById('txt')
+            var res = document.querySelector('p')
+            res.innerHTML = texto.value
+            texto.value = ''
+            // texto.innerHTML = texto.value = ''
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+*Variáveis
+
+ = serve para receber uma variável
+
+    null indicaque que não recebe valor nenhum
+
+    Exemplo de uma variável: 
+
+    Var n1 = 5
+
+    Var n2 = 8.5
+
+    Var n3 = 15
+
+    Uma strig:
+
+    Var s1 = "JavaScript"
+
+    Var s2 = 'Curso em video'
+
+    Var s3 = `guanabara`
+
+    o nome das variáveis são IDENTIFICADORES
+
+
+

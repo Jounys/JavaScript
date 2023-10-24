@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="velocidade">
+    <input type="button" value="Enviar"  onclick="Clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        // var vel = document.getElementById('vel')
+        // vel.addEventListener('click', Clicar)
+
+
+        function Clicar(){
+            var velocidade = document.getElementById('velocidade')
+            var res = document.getElementById('res')
+            var vel = Number(velocidade.value)
+            // res.innerHTML = `Velocidade Ultrapassada ${vel}`
+            if(vel > 60){
+                res.innerHTML = `Velocidade Ultrapassada. Você estava à ${vel}Km/h`
+                velocidade  .value = ''
+            } else {
+                res.innerHTML = `Na velociade regular!`
+                velocidade  .value = ''
+            }
+            res.innerHTML += `<p>Dirija Sempre com cuidado!</p>`
+        }
+    </script>
+</body>
+</html>

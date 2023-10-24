@@ -1,0 +1,24 @@
+Variaveis compostas
+
+  Variaveis compostas e/ou Array (vetor) recebe um numero para identificação(índici ou chave) com inicio em 0 (zero)
+  
+  "Uma variavel composta é uma variavel que tem varios elementos, cada elemento é composto por seu valor e por uma chave de identificação" - Gustavo Guanabra
+
+  
+
+  Ex: 
+    
+    let num = [ , , ]
+    num.sort()  // Para colocar em ordem
+    num[]       // Para acrescentar um valor em uma posição especifica
+    num.length  // Para saber o comprimento
+    num.push()  // Para adicionar na última posição 
+    num.indexOf()  // Para buscar um valor
+
+
+    let valores = [ 8, 1, 7, 4, 2, 9]
+
+    for(let pos = 0; pos< valores.length; pos++ )
+    {
+      console.log(`A posição ${pos} tem o valor ${valores[pos]}`) // Exibindo as posições e depois seus valores especificos
+    }

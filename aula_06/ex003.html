@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightgray;
+            color: white;
+        }
+        h1 { /* Comentário em CSS */
+            background-color: rgb(75, 75, 163);
+            border-radius: 6px;
+            box-shadow: 0px 0px 26px -5px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- Isso é um comentário em HTML -->
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) // O prompt retorna uma String
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} com ${n2} é: ${s}`)
+        
+        // (Number + Number) para adição
+        // (String + String) para concatenação
+        /*
+            Converção para String:
+            
+            window.alert('A soma é: ' + String(s))
+            window.alert('A soma é: ' + s.toString())
+        */
+    </script>
+</body>
+</html>

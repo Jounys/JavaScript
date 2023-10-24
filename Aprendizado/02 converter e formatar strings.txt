@@ -1,0 +1,40 @@
+ // (number + number) para adicão 
+        // (string + string) para concatenção
+
+        // Para converter string em number! 
+        /*
+            Number.parseInt(n) 'número inteiro'
+            Number.parseFloat(n)'número real'
+            Number(n) 'simplificado tbm funciona e faz ambas as operações'
+        */
+
+        // Para converter para String
+        /*
+            String(n)
+            n.toString()
+        */
+
+        // Formatando Strings
+        /* 
+            var s = 'JavaScript'
+            'Eu estou aprendendo s' / não faz interpretação
+            'Eu estou aprendendo' + s / usa concatenação
+            `Eu estou aprendendo ${}` / usa template string
+
+            s.length  / qunatos caracteres a string tem
+            s.toUpperCase() / tudo para 'MAIÚSCULAS'
+            s.toLowerCase() / tudo para 'minúsculas'
+        */
+
+// document.write() imprime na tela do navegador
+
+        // Formatação de número
+        /*
+        var n1 = 1543.5
+        n1.toFixed(2)
+
+        Localizando e transfomando para moeda
+        n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+
+        para transformar ponto em virgula se usa o .repalce('.', ',')
+        */

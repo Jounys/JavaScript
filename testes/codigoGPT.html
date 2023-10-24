@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tarefas</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px;
+            cursor: pointer;
+        }
+        .concluida {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+    <input type="text" id="novaTarefa" placeholder="Adicione uma tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+    <ul id="listaTarefas">
+        <!-- Aqui será exibida a lista de tarefas -->
+    </ul>
+    
+    <script>
+        function adicionarTarefa() {
+            var campoTarefa = document.getElementById("novaTarefa");
+            var textoTarefa = campoTarefa.value;
+        
+            if (textoTarefa !== "") {
+                var listaTarefas = document.getElementById("listaTarefas");
+                var novaTarefa = document.createElement("li");
+                novaTarefa.textContent = textoTarefa;
+                listaTarefas.appendChild(novaTarefa);
+        
+                // Limpar o campo de entrada
+                campoTarefa.value = "";
+                
+                // Adicionar um evento de clique a cada nova tarefa
+                novaTarefa.addEventListener("click", function () {
+                    if (!novaTarefa.classList.contains("concluida")) {
+                        novaTarefa.classList.add("concluida");
+                    } else {
+                        novaTarefa.classList.remove("concluida");
+                    }
+                });
+                
+            }
+        }
+        </script>
+            
+        
+</body>
+</html>

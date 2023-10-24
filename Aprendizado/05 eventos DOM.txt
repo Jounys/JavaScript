@@ -1,0 +1,32 @@
+Eventos DOM
+
+    Disparo de Eventos
+
+        mouseenter - entrou no espaço
+        mousemove  - se movimentou no espaço
+        mousedown  - clicou e segurou
+        mouseup    - soltou o clique
+        click      - clicou direto
+        mouseout   - tirou do espaço
+
+        OBS: adicionar 'on' no inicio do evento para usar o evento direto no HTML.
+
+        OBS: Pesquisar Eventos DOM lista de JavaScript
+        
+    Funções/function
+
+        function ação(param){
+            /*bloco*/
+        }
+
+
+    Adicionar evento direto no JavaScript
+
+        addEventListener()
+
+        ex:
+            variavel.addEventListener('mouseenter', entrou)
+
+            function entrou(){
+                area.innerText = 'Entrou!'
+            }

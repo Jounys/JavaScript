@@ -1,0 +1,34 @@
+Árvore DOM*
+
+Estilizar elementos na tela com o comando: document.getElementsByTagName()[0]
+dentro da getElementsByTagName() puxa a tag a ser modificada entre aspas simples ou duplas, e para modificar os elementos usa o nome da variavel junto com .style
+
+    Exemplos:
+
+        corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        corpo.style.backgroundColor = 'blue'
+        p1.style.backgroundColor = 'red'
+
+        document.write(p1.innerText) puxa sem as formatações e (innerHTML) puxa com as formatações
+
+    Selecionando
+
+        Por
+            Marca
+                getElementsByTagName()[0]
+            ID
+                getElementById()
+            Nome
+                getElementsByName()[0]
+            Classe
+                getElementsByClassName()[0]
+            Seletor
+                querySelector()
+                querySelectorAll()
+                
+Para modificar uma propriedade no JS posso usar a variavel junto com 
+.innerText = 'modificar' ou com document.getElementById('').innerText = 'modificar'
+
+    variavel.innerText = 'modificar'
+    document.getElementById('').innerText = 'modificar'
