@@ -14,7 +14,7 @@ function verificar(){
         
         if(fsex[0].checked){
             gênero = 'Homem'
-            if(idade >= 0 && idade < 10){
+            if(idade >= 0 && idade < 12){
                 // Criança
                 img.setAttribute('src', 'imagens/criançaH.png')
             } else if( idade < 18){
@@ -27,7 +27,7 @@ function verificar(){
                 // Idoso
                 img.setAttribute('src', 'imagens/idosoH.png')
             }
-        }else if(fsex[1].checked){ // Ou so else
+        }else if(fsex[1].checked){ // Ou só else
             gênero = 'Mulher'
             if(idade >= 0 && idade < 10){
                 // Criança
